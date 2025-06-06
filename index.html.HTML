@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios de Uñas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffe6f0;
+      color: #4d004d;
+    }
+    header {
+      background-color: #ffb6c1;
+      padding: 20px;
+      text-align: center;
+      font-size: 2.5rem; /* logo más grande */
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header img {
+      height: 120px; /* logo más grande */
+      width: 120px;
+      margin-bottom: 10px;
+      border-radius: 50%; /* logo redondo */
+      object-fit: cover;
+      border: 3px solid white;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #ff99bb;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 25px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #ff77a8;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+    }
+    h2 {
+      color: #d6336c;
+      margin-top: 0;
+    }
+    /* eliminamos la sección modelos */
+    .trabajos img {
+      width: 150px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(214, 51, 108, 0.4);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .trabajos img:hover {
+      transform: scale(1.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 2px solid #ffb6c1;
+      border-radius: 8px;
+      margin-top: 5px;
+      font-size: 1rem;
+      resize: vertical;
+    }
+    button {
+      margin-top: 20px;
+      padding: 15px;
+      border: none;
+      background-color: #ff6699;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #e65585;
+    }
+    footer {
+      text-align: center;
+      background-color: #ffb6c1;
+      padding: 15px;
+      color: white;
+      font-size: 1rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/zv0lxbU.png" alt="Logo" />
+    Tu Emprendimiento de Uñas
+  </header>
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#trabajos">Trabajos Realizados</a>
+    <a href="#sobre-nosotros">Sobre Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Kapping - $500</li>
+      <li>Semipermanente - $400</li>
+      <li>Soft Gel - $700</li>
+      <li>Poly Gel - $700</li>
+    </ul>
+  </section>
+
+  <section id="trabajos" class="trabajos">
+    <h2>Trabajos Realizados</h2>
+    <div>
+      <!-- PRIMERA FOTO BORRADA -->
+      <img src="https://i.imgur.com/Hr1HlKY.jpg" alt="Trabajo 2" />
+      <img src="https://i.imgur.com/CO7KICU.jpg" alt="Trabajo 3" />
+      <img src="https://i.imgur.com/zgmhzRo.jpg" alt="Trabajo 4" />
+      <img src="https://i.imgur.com/W1uOHSh.jpg" alt="Trabajo 5" />
+      <img src="https://i.imgur.com/fot8rSD.jpg" alt="Trabajo 6" />
+    </div>
+  </section>
+
+  <section id="sobre-nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos un equipo apasionado por el cuidado y la belleza de tus uñas. Nos dedicamos a ofrecer servicios personalizados con materiales de alta calidad y técnicas innovadoras para que te sientas única y segura.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Teléfono: 091333481</p>
+    <form action="https://formspree.io/f/mzzgdgzl" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="message" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    Dirección: Chana 2069, Montevideo, Uruguay — Tel: 091333481
+  </footer>
+</body>
+</html>
